@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Фотостудия</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+<header class="header">
+    <div class="header__content">
+      <div class="container">
+        <div class="header__content-inner">
+          <div class="header__logo">
+            <a href="#">
+              <img src="img/logo.png" alt="">
+            </a>
+          </div>
+          <nav class="menu">
+            <div class="header__btn-menu">
+              <span class="icon-bars"></span>
+            </div>
+            <ul>
+              <li><a href="#advantages">О нас</a></li>
+              <li><a href="#gallery">Портфолио</a></li>
+              <li><a href="#services">Фотосессии</a></li>
+              <li><a href="#comments">Отзывы</a></li>
+              <a class="header__phone" href="tel:79236918">+7 (923) 356-69-18</a>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="slider">
+    <div class="container">
+      <div class="slider__inner">
+        <div class="slider__item">
+          <div class="slider__item-content">
+            <div class="slider__title">
+              Мы делаем фотографии, чтобы <font color='#BA0101'>понять</font>, <br>что значит для нас наша <font color='#BA0101'>жизнь</font>
+            </div>
+            <div class="slider__text">
+              <i>- Ральф Хаттерсли</i>
+            </div>
+            <a data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default-btn">
+              Записаться
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="advantages">
+    <div class="container">
+      <div class="advantages__inner">
+      	<a name="advantages"></a>
+        <div class="advantages-item">
+        	<img src="img/advantages__title-one.png" alt=''>
+          <div class="advantages__title">
+            Креативный подход
+          </div>
+          <div class="advantages__text">
+            В процессе фотосьемки вы попробуете новые для себя роли, тем самым раскрывая в себе новые стороны
+          </div>
+        </div>
+        <div class="advantages-item">
+        	<img src="img/advantages__title-two.png" alt=''>
+          <div class="advantages__title">
+            Безопасность и комфорт
+          </div>
+          <div class="advantages__text">
+            Перед съемкой проводится бесплатная консультация, где обговорим все тонкости фотосессии и составим договор
+          </div>
+        </div>
+        <div class="advantages-item">
+        	<img src="img/advantages__title-three.png">
+          <div class="advantages__title">
+            Быстрая и качественная работа
+          </div>
+          <div class="advantages__text">
+            Предоставим готовые фотографии в срок от 5 до 10 дней
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="gallery">
+	<div class="container">
+    <div class="gallery-list">
+    	<a name="gallery"></a>
+      <a href="img/one.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="img/one.jpg" alt="alt">
+      </a>
+      <a href="img/two.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="img/two.jpg" alt="alt">
+      </a>
+     <a href="img/five.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="img/five.jpg" alt="alt">
+      </a>
+      <a href="img/four.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="img/four.jpg" alt="alt">
+      </a>
+       <a href="img/three.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="img/three.jpg" alt="alt">
+      </a>
+      
+      <a href="img/six.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="img/six.jpg" alt="alt">
+      </a>
+      <a href="img/seven.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="img/seven.jpg" alt="alt">
+      </a>
+      <a href="img/eight.jpg" class="gallery-item">
+        <div class="gallery-item-hover">Посмотреть</div>
+        <img src="img/eight.jpg" alt="alt">
+      </a>
+    </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+  <script>
+    $(".gallery-list").magnificPopup({
+      delegate: "a",
+      type: "image",
+      gallery: {
+        enabled: true
+      }
+    });	
+  </script>
+
+<section class="services">
+    <div class="container">
+    	<a name="services"></a>
+      <div class="services__top">
+        <div class="services__title-box">
+          <div class="services__title">
+            Пакет услуг
+          </div>
+        </div>
+      </div>
+      <div class="services__items">
+        <div class="services__item">
+       
+          <div class="services__item-title">
+            Пакет «Минимум»
+            <br>
+            4000р
+          </div>
+          <div class="services__item-text">
+            <ul>
+            	<li>Фотосессия 1-1,5 часа</li>
+            	<li>1 локация или студия</li>
+            	<li>Помощь с позированием, подбором образа</li>
+            	<li>Готовность - 5 дней</li>
+            	<li>15 лучших фотографией с ретушью</li>
+            	<li>50 фотографий с цветокоррекцией</li>
+            </ul>
+          </div>
+          <div class="services__item-btn">
+            <a data-fancybox data-src="#modal" href="javascript:;" class="default-btn">
+              Записаться
+            </a>
+          </div>
+        </div>
+        <div class="services__item">
+          
+          <div class="services__item-title">
+            Пакет «Стандарт»
+            <br>
+            7000р
+          </div>
+          <div class="services__item-text">
+           	<li>Фотосессия 2-2,5 часа</li>
+            	<li>2 локации или студии</li>
+            	<li>Помощь с позированием, подбором образа</li>
+            	<li>Готовность - 7 дней</li>
+            	<li>30 лучших фотографией с ретушью</li>
+            	<li>100 фотографий с цветокоррекцией</li>
+          </div>
+          <div class="services__item-btn">
+            
+            <a data-fancybox data-src="#modal" href="javascript:;" class="default-btn">
+              Записаться
+            </a>
+          </div>
+        </div>
+        <div class="services__item">
+      
+          <div class="services__item-title">
+            Пакет «Премиум»
+            <br>
+            10 000р
+          </div>
+          <div class="services__item-text">
+            <li>Фотосессия 3-4 часа</li>
+            	<li>3 локации или студии</li>
+            	<li>Помощь с позированием, подбором образа и укладка визажиста</li>
+            	<li>Готовность - 10 дней</li>
+            	<li>60 лучших фотографией с ретушью</li>
+            	<li>150 фотографий с цветокоррекцией</li>
+          </div>
+          <div class="services__item-btn">
+            
+            <a data-fancybox data-src="#modal" href="javascript:;" class="default-btn">
+              Записаться
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<section class="comments">
+    <div class="container">
+    	<a name="comments"></a>
+      <div class="comments__top">
+        <div class="comments__title-box">
+          <div class="comments__title">
+            Отзывы
+          </div>
+        </div>
+      </div>
+      <div class="comments__inner">
+        <div class="comments__slider">
+          <div class="comments__slider-inner">
+            <div class="comments__slider-item">
+            	<img src="img/comments-photo.jpg" alt="">          
+              <div class="comments__slider-text">
+              	Каждый дизайнер ожидает от фотографа предметной съемки не только внимательного отношения к деталям своего  произведения, но и глубины раскрытия смысла - идеи, вложенной в работу. Ведь именно от фотографа зависит: обретет ли произведение резонанс у зрителя. Доверяя своё творчество Angolo, вы получите не только качественную предметную съемку, но и прикоснетесь к миру художественной фотографии, тонко чувствующего фотографа-творца!
+                
+              </div>
+              <div class="comments__slider-author">
+                Вера
+              </div>
+            </div>
+            <div class="comments__slider-item">
+            	<img src="img/comments-photo-two.jpg" alt="">
+              <div class="comments__slider-text">
+                Посмотрели фотографии (я наверно пересмотрела уже раз 20 не меньше), очень понравились! Впрочем, у вас другого не бывает. Все такое мягкое, естественное и милое. Спасибо вам большое за труд!
+              </div>
+              <div class="comments__slider-author">
+                Надежда
+              </div>
+            </div>
+            <div class="comments__slider-item">
+            	<img src="img/comments-photo-three.jpg" alt="">
+              <div class="comments__slider-text">
+                Я в полном восторге! Даже не знаю как выразить свой восторг! Реально мега круто. Я так счастлива, что всё удалось. Мужу показала и ему всё понравилось, говорит не зря всё терпел) Большое спасибо, с вами понравилось работать. Про фото нет слов! Очень круто
+              </div>
+              <div class="comments__slider-author">
+                Любовь
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer class="footer">
+    <div class="footer__content">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__info">
+            <div class="footer__title">
+              Контактная информация
+            </div>
+            <ul class="footer__list">
+              <li><a class="footer__phone" href="tel:79236918">+7 (923) 356-69-18</a></li>
+              <li><a href="#">angolo@gmail.com</a></li>
+              <li><a class="footer__adress" href="#">Россия, г. Омск, Гагарина, 10</a></li>
+            </ul>
+          </div>
+          <div class="footer__map">
+            <iframe height="250px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2289.189126008024!2d73.37514831553345!3d54.9873179803556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43aafe1a80e84ef1%3A0x73ed6f7fab8d72ee!2z0YPQuy4g0JPQsNCz0LDRgNC40L3QsCwgMTAsINCe0LzRgdC6LCDQntC80YHQutCw0Y8g0L7QsdC7LiwgNjQ0MDI0!5e0!3m2!1sru!2sru!4v1623329394203!5m2!1sru!2sru" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copy">
+      <div class="container">
+        <div class="copy__text">
+          © 2021 Клочкова Ксения, ИСП381.
+        </div>
+      </div>
+    </div>
+  </footer> 
+
+  <div id="modal">
+    <form>
+      <input type="text" placeholder="Ваше имя">
+      <input type="text" placeholder="Ваш телефон">
+      <input type="submit" value="Отправить">
+    </form>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
